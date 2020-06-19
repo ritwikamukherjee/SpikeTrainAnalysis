@@ -1,3 +1,3 @@
 # SpikeTrainAnalysis
 
-This code takes variable neural spike trains and finds a representative average spike train to represent all the spike trains.
+This code takes variable neural spike trains and finds a representative average spike train to represent all the spike trains. The variability in spike timings and number can hurt the temporal structure of spike trains when viewed as an average. Here, a simple method to find an average spike train is represented via code. The spike trains are first mapped to functions, these functions are averaged, and a greedy algorithm is then used to map the average function back to a spike train. Their performance on a classification-based test is considerably better than the performance of the medoid spike trains. The algorithm is adopted from [Julienne et. al](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3606416/) from J Math Neurosci.
